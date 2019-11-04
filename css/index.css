@@ -418,10 +418,26 @@ footer {
 /* Responsive layout */
 
 @media screen and (min-width: 800px) {
+  img,
+  embed,
+  object,
+  video {
+    max-width: 100%;
+  }
   body {
     width: 800px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  nav {
+    margin-top: 10%;
+  }
+
+  .main {
+    max-width: 100%;
+    width: 90%;
+    justify-content: center;
   }
 }
 
@@ -435,6 +451,7 @@ footer {
 
   body {
     max-width: 100%;
+    margin: 0px 0px;
   }
 
   /* navigation */
@@ -444,7 +461,7 @@ footer {
     flex-wrap: wrap;
     width: 100%;
     text-align: center;
-    margin: 30px 0px;
+    margin: 30px 0px 0px 0px;
     line-height: 2;
     justify-content: center;
     font-size: 200%;
@@ -470,7 +487,7 @@ footer {
   }
 
   .intro img {
-    width: 85%;
+    display: none;
   }
 
   /* End Intro */
@@ -545,5 +562,63 @@ footer {
     flex-direction: column;
     text-align: center;
     margin-left: 35px;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 800px) {
+  img,
+  embed,
+  object,
+  video {
+    max-width: 100%;
+  }
+
+  body {
+    max-width: 100%;
+    margin: 0px 0px;
+  }
+
+  header {
+    max-width: 100%;
+  }
+  header nav {
+    display: flex;
+    flex-direction: column-reverse;
+    max-width: 100%;
+    width: 96%;
+    justify-content: flex-start;
+    align-content: center;
+  }
+
+  .links {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    margin-top: 4%;
+    max-width: 100%;
+    width: 95%;
+  }
+
+  .links a {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+  }
+
+  nav img {
+    margin-top: 20%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .intro img {
+    display: none;
+  }
+
+  .main {
+    max-width: 100%;
+    width: 90%;
+    justify-content: center;
   }
 }
